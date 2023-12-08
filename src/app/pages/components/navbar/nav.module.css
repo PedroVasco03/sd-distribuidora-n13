@@ -36,28 +36,31 @@
     align-items: center;
     text-decoration: none;
     margin-left: 15px;
-    height: 100%;
+    margin-top: 20px;
 }
 
 .logoLink{
     height: 100%;
     align-items: center;
     text-decoration: none;
-    color: #3066be;
+    color: #00bfd8;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: -1;
 }
 
 .nav{
+    position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    height: 70px;
-    box-sizing: border-box;
+    height: 100%;
     justify-content: center;
     text-align: center;
+    align-items: center;
     padding: 0;
     margin: 0;
+    margin-top: 20px;
 }
 
 .navLink{
@@ -66,13 +69,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-    position: relative;
     font-size: 1.1rem;
     z-index: 2;
     text-decoration: none;
     padding: 10px 15px;
     font-weight: 600;
-    background-color: #fefefe;
     color: rgba(0, 0, 0, 0.607);
     border-radius: 10px;
     margin: 0 5px;
@@ -90,8 +91,8 @@
 .get_started{
     text-decoration: none;
     padding: 10px 15px;
-    border:1px solid #3066be;
-    color: #3066be;
+    border:1px solid #00bfd8;
+    color: #00bfd8;
     font-weight: 600;
     border-radius: 10px;
     margin-right: 15px;
@@ -99,12 +100,10 @@
 }
 
 .navLink:hover{
-    background-color: #eeeeee;
-    color: rgb(0, 119, 255);
-    scale: 1.1;
+    color: #0079f9;
 }
 
 .get_started:hover{
-   background-color: #eeeeee; 
+   background-color: #eeeeee;
    border-color: #ffffff;
 }

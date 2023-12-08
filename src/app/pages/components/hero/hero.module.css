@@ -1,67 +1,112 @@
+
 @import url('../../assets/fonts/geral.fontes.css');
 
-.container{
-    margin: 70px 0;
-    padding: 0;
-    height: calc(100vh - 70px);
+
+/*********************/
+/*    04. Header     */
+/*********************/
+.header {
+    margin-top: 70px;
+	background-color: #fff;
+    font-family: "OpenSans";
     width: 100%;
-    margin-left: -8px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-family: 'OpenSans';
-}
-
-.section1{
-    height: 100%;
-    width: 50%;
+    height: calc(100vh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section1 .content{
-    position: relative;
-    background-color: #f6f6f6;
-    border-radius: 25px;
-    width: 70%;
-    height: 70%;
-    box-shadow: 4px 4px 8px 4px #3066be6f;
+.header .header_content {
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	text-align: center;
 }
 
-.section1 .content .img{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: -20px;
-    left: 0;
+.header .text_container {
+	margin-bottom: 4rem;
 }
 
-.section2{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 20px;
+.header .image_container{
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+}
+.header h1 {
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	line-height: 3.125rem;
+}
+ 
+.header .p_large {
+	margin-bottom: 1.875rem;
 }
 
-.section2 .h2{
-    font-size: 6rem;
-    line-height: 1;
-    color: #3066be;
-    margin-bottom: 0;
-    letter-spacing: 2;
-}
 
-.section2 .p{
-    font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.685);
-}
 
-.section2 .p .a{
-    text-decoration: none;
+/* Min-width width 768px */
+@media (min-width: 768px) {
+
+	/* Header */
+	.header .header_content {
+		padding-top: 10.5rem;
+	}
+
+	.header h1 {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
+	/* end of header */
+
+}
+/* end of min-width width 768px */
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	
+	/* Header */
+	.header {
+        height: 100vh;
+		background: url('../../assets/images/header-background.jpg') center center no-repeat;
+		background-size: cover; 
+	}
+
+	.header .header_content {
+		padding-top: 11.5rem;
+		text-align: left;
+	}
+
+	.header .text_container {
+		margin-top: 3rem;
+		margin-bottom: 0;
+	}
+	/* end of header */
+
+}
+/* end of min-width width 992px */
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	
+	
+	/* Header */
+	.header .header_content {
+		padding-top: 12.5rem;
+	}
+
+	.header .text_container {
+		margin-top: 5.375rem;
+		margin-left: 1rem;
+		margin-right: 2rem;
+	}
+
+	.header .image_container {
+		margin-left: 2rem;
+		margin-right: 1rem;
+	}
+	/* end of header */
+	
 }
