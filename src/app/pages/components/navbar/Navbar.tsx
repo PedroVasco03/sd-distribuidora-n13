@@ -35,7 +35,7 @@ const Navbar = () =>{
                         </ul>
                     </nav>
                     <i className={style.open+" fas fa-bars "+ style.mobile_togle} onClick={Opened}></i>
-                    {/* <i className={style.close+" fas fa-x "+ style.mobile_togle}></i> */}
+                    <i className={style.close+" fas fa-x "+ style.mobile_togle} onClick={Opened}></i>
                     {/* navbar */}
                 </div>
             </header>

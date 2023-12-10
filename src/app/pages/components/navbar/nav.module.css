@@ -42,6 +42,8 @@
     text-decoration: none;
     margin-left: 15px;
     margin-top: 10px;
+    background-color: #ffffff;
+    z-index: 100;
 }
 
 .logoLink{
@@ -52,6 +54,7 @@
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: -1;
+    
 }
 
 .nav{
@@ -66,6 +69,7 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
+    
 }
 
 .navLink{
@@ -89,6 +93,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    z-index: 1;
 }
 
 
@@ -120,6 +125,7 @@
     font-size: 25px;
     cursor: pointer;
     display: none;
+    z-index: 10001;
 }
 
 @media (max-width:740px){
@@ -134,7 +140,7 @@
     }
 
     .header{
-        max-height: 300px;
+        max-height: 320px;
     }
     .contNav{
         
@@ -173,12 +179,26 @@
 
     .nav ul{
         display:  none;
-        margin-top: -35px;
+        height: 100%;
+        margin-top: -25px;
+        padding: 10px;
         align-items: center;
         text-align: center;
     }
     .mobile_togle{
         display: block;
     }  
+
+    .close{
+        display: none;
+    }
+
+    .openNav .close{
+        display: block;
+    }
+    .openNav .open{
+        display: none;
+        
+    }
 }
 
