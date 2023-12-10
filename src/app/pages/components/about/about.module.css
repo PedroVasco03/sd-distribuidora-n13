@@ -99,3 +99,29 @@
       flex-direction: column-reverse;
     }
   }
+
+  @media (max-width: 992px) {
+  
+    .about_section .img_box {
+      margin: 0 5%;
+    }
+  
+    .about_section .detail_box {
+      margin-right: 5%;
+    }
+    .about_section .img_container .img_box.b2 {
+      margin-top: -5%;
+    }
+  
+  }
+  
+  
+  @media (max-width: 576px) {
+    .about_section .img_container .img_box.b1 {
+      width: 80%;
+    }
+  
+    .about_section .img_container .img_box.b2 {
+      width: 55%;
+    }
+  }

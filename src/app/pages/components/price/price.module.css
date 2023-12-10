@@ -1,0 +1,176 @@
+.cards_2 {
+	padding-top: 3rem;
+	padding-bottom: 2.75rem;
+	text-align: center;
+    font-family: 'Raleway';
+}
+
+.cards_2 h2 {
+	margin-bottom: 1rem;
+}
+
+.cards_2 .card {
+	display: block;
+	max-width: 19.5rem;
+	margin-right: auto;
+	margin-bottom: 6rem;
+	margin-left: auto;
+	border: 1px solid #c4d8dc;
+	border-radius: 0.5rem;
+}
+
+.cards_2 .card .card_body {
+	padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+}
+
+.cards_2 .card .card_title {
+	margin-bottom: 0.625rem;
+	color: #393939;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	text-align: center;
+}
+
+.cards_2 .card .card_subtitle {
+    text-wrap: nowrap;
+	margin-bottom: 1.75rem;
+}
+
+.cards_2 .card .cell_divide_hr {
+	height: 1px;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: none;
+	background-color: #c4d8dc;
+}
+
+.cards_2 .card .price {
+	padding-top: 0.875rem;
+	padding-bottom: 1.5rem;
+}
+
+.cards_2 .card .value {
+	color: #00bfd8;
+	font-weight: 700;
+	font-size: 3.5rem;
+	line-height: 4rem;
+	text-align: center;
+}
+
+.cards_2 .card .currency {
+	margin-right: 0.375rem;
+	color: #00bfd8;
+	font-size: 1.5rem;
+	vertical-align: 56%;
+}
+
+.cards_2 .card .frequency {
+	margin-top: 0.25rem;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.list_unstyled{
+    list-style: none;
+}
+
+.cards_2 .card .list_unstyled {
+	margin-top: 1.875rem;
+	margin-bottom: 1.625rem;
+	text-align: left;
+    width: 100%;
+    padding: 0;
+}
+
+.cards_2 .card .list_unstyled.li_space_lg li {
+	margin-bottom: 0.5rem;
+}
+
+.cards_2 .card .list_unstyled .fas {
+	color: #00bfd8;
+	line-height: 1.375rem;
+}
+
+.cards_2 .card .list_unstyled .fas.fa_times {
+	margin-left: 0.1875rem;
+	margin-right: 0.125rem;
+	color: #777b7e;
+}
+
+
+.media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.cards_2 .card .list_unstyled .media_body {
+	margin-left: 0.625rem;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+.cards_2 .card .button_wrapper {
+	position: absolute;
+	right: 0;
+	bottom: -1.25rem;
+	left: 0;
+	text-align: center;
+}
+
+
+
+/* Best Value Label */
+.cards_2 .card .label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10.625rem;
+    height: 10.625rem;
+    overflow: hidden;
+}
+
+.cards_2 .card .label .best_value {
+    position: relative;
+	width: 13.75rem;
+	padding: 0.3125rem 0 0.3125rem 4.125rem;
+    background-color: #00bfd8;
+	color: #fff;
+    -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+    transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+/* Min-width width 768px */
+@media (min-width: 768px) {
+}
+/* end of min-width width 768px */
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	/* Pricing */
+	.cards_2 .card {
+		display: inline-block;
+		width: 17.125rem;
+		max-width: 100%;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+	/* end of pricing */
+}
+/* end of min-width width 992px */
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	/* Pricing */
+	.cards_2 .card {
+		width: 19.5rem;
+		margin-right: 1.625rem;
+		margin-left: 1.625rem;
+	}
+	/* end of pricing */
+}

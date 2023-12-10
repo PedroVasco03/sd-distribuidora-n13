@@ -6,11 +6,11 @@
 /*    04. Header     */
 /*********************/
 .header {
-    margin-top: 70px;
+    margin-top: 60px;
 	background-color: #fff;
     font-family: "OpenSans";
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;

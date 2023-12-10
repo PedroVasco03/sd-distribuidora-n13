@@ -1,17 +1,62 @@
 @font-face {
     font-family: 'Lato';
-    src: url('../fonts/Lato/Lato-Light.ttf');
     src: url('../fonts/Lato/Lato-Regular.ttf');
-    src: url('../fonts/Lato/Lato-Bold.ttf');
     font-weight: 400;
     font-style: normal;
 }    
 
 @font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+@font-face {
     font-family: 'OpenSans';
     src: url('../fonts/Open_Sans/static/OpenSans-Light.ttf');
-    src: url('../fonts/Open_Sans/static/OpenSans-Medium.ttf');
-    src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');
-    font-weight: 400;
+    font-weight: lighter;
     font-style: normal;
 }    
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}
