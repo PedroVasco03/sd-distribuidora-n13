@@ -1,0 +1,101 @@
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.about_section {
+    background-color: #f3f0f6;
+    width: 100%;
+  }
+  
+  .about_section .row {
+    display: flex;
+    flex-direction: row;
+    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .about_section .img_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .about_section .img_container .img_box {
+    border: 5px solid #00bfd8;
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+  
+  .about_section .img_container .img_box.b1 {
+    width: 70%;
+  }
+  
+  .about_section .img_container .img_box.b2 {
+    width: 50%;
+    margin-left: auto;
+    margin-top: -12%;
+  }
+  
+  .about_section .img_container .img_box .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:  filter, scale .5s ease-in-out;
+    -webkit-transition:  filter, scale .5s ease-in-out;
+    -moz-transition:  filter, scale .5s ease-in-out;
+    -ms-transition:  filter, scale .5s ease-in-out;
+    -o-transition:  filter, scale .5s ease-in-out;
+}
+
+  .about_section .img_container .img_box .img:hover{
+    scale: 1.1;
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
+}
+  .about_section .detail_box {
+    margin-right: 15%;
+  }
+  
+  .about_section .detail_box p {
+    margin-top: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .about_section{
+      padding: 20px;
+    }
+    .about_section .row{
+      flex-direction: column-reverse;
+    }
+  }

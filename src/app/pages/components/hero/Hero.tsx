@@ -1,4 +1,3 @@
-import { Container, Row } from 'reactstrap';
 import style from './hero.module.css';
 import Image from 'next/image';
 import i1 from '../../assets/images/header-teamwork.svg'

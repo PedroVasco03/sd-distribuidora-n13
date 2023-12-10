@@ -3,6 +3,7 @@ import "./global.css"
 import Head from "next/head";
 import Hero from "./pages/components/hero/Hero";
 import Navbar from "./pages/components/navbar/Navbar";
+import About from "./pages/components/about/About";
 
 
 const Home = () =>{
@@ -13,6 +14,7 @@ const Home = () =>{
             </Head>
             <Navbar/> 
             <Hero/>
+            <About/>
             <h1>home page 90</h1>
         </>
     )
