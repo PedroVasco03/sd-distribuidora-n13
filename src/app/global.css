@@ -12,7 +12,9 @@ Colors:
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    list-style: none !important;
+    text-decoration: none !important;
 }
 
 .turquoise{
@@ -51,6 +53,14 @@ Colors:
     scrollbar-color: var(--secondary) var(--primary);
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
   h1 {
     color: #393939;
     font: 700 3rem/3.5rem "Raleway", sans-serif;

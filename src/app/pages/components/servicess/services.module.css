@@ -1,0 +1,122 @@
+.section {
+    padding: 60px 0;
+    overflow: hidden;
+    background-color: #f7fbfe;
+  }
+  
+  
+  .section_title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section_title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #222222;
+  }
+  
+  .section_title h2::before,
+  .section_title h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+    display: inline-block;
+  }
+  
+  .section_title h2::before {
+    margin: 0 15px 10px 0;
+  }
+  
+  .section_title h2::after {
+    margin: 0 0 10px 15px;
+  }
+  
+  .section_title p {
+    margin: 15px 0 0 0;
+  }
+
+
+
+  .services .icon_box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  .services .icon_box::before {
+    content: "";
+    position: absolute;
+    background: #e1f0fa;
+    right: -60px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  
+  .services .icon_box:hover::before {
+    background: #3498db;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  
+  .services .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #3498db;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+  }
+  
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon_box:hover .title a,
+  .services .icon_box:hover .description {
+    color: #fff;
+  }
+  
+  .services .icon_box:hover .icon {
+    background: #fff;
+  }
+  
+  .services .icon_box:hover .icon i {
+    color: #3498db;
+  }
