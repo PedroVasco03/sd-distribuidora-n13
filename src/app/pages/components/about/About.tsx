@@ -6,7 +6,7 @@ const About = () => {
     return(
         <>
              {/* about section  */}
-                <section className={style.about_section +" "+ style.layout_padding}>
+                <section id="#about" className={style.about_section +" "+ style.layout_padding}>
                     <div className="container">
                         <div className={style.row+" row"}>
                             <div className="col-md-6">
