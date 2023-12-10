@@ -6,6 +6,7 @@ import Hero from "./pages/components/hero/Hero";
 import Navbar from "./pages/components/navbar/Navbar";
 import About from "./pages/components/about/About";
 import Price from "./pages/components/price/Price";
+import Contact from "./pages/components/contact/Contact";
 
 
 const Home = () =>{
@@ -18,6 +19,7 @@ const Home = () =>{
             <Hero/>
             <Price/>
             <About/>
+            <Contact/>
             <h1>home page 90</h1>
         </>
     )

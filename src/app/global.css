@@ -14,6 +14,10 @@ Colors:
     padding: 0;
     box-sizing: border-box;
 }
+
+.turquoise{
+ color: #00bfd8;
+}
 :root {
     --primary: #f1f1f1;
     --secondary: #00bfd8;
@@ -89,6 +93,10 @@ Colors:
   
   .p-heading {
     margin-bottom: 3.875rem;
+  }
+
+  .li-space-lg li {
+    margin-bottom: 0.25rem;
   }
 
   .btn_solid_lg {
