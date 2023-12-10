@@ -45,7 +45,6 @@ const Contact = () => {
                                             setEmpynome('contact_notEmpty__GIj8s') 
                                         }}}/>
                                     <label className={style.label_control} >Name</label>
-                                    {nome}
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group}>
@@ -59,7 +58,6 @@ const Contact = () => {
                                             setEmpyemail('contact_notEmpty__GIj8s') 
                                         }}}/>
                                     <label className={style.label_control} >Email</label>
-                                    {email}
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group}>
@@ -74,7 +72,6 @@ const Contact = () => {
                                         }}}
                                     />
                                     <label className={style.label_control} >Your message</label>
-                                    {message}
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group+" checkbox"}>
