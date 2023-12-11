@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #222222;
+    font-size: 14px;
+  }
+  
+  .footer .credits {
+    font-size: 13px;
+    padding-top: 5px;
+    color: #222222;
+  }
+  
+  .footer .footer_links a {
+    color: #222222;
+    padding-left: 15px;
+  }
+  
+  .footer .footer_links a:first-child {
+    padding-left: 0;
+  }
+  
+  .footer .footer_links a:hover {
+    color: #3498db;
+  }

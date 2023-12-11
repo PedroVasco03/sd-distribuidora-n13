@@ -8,6 +8,7 @@ import About from "./pages/components/about/About";
 import Price from "./pages/components/price/Price";
 import Contact from "./pages/components/contact/Contact";
 import Services from "./pages/components/servicess/Services";
+import Footer from "./pages/components/footer/Footer";
 
 
 const Home = () =>{
@@ -22,7 +23,7 @@ const Home = () =>{
             <Price/>
             <About/>
             <Contact/>
-            <h1>home page 90</h1>
+            <Footer/>
         </>
     )
 }
