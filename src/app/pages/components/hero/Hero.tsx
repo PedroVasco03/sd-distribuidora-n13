@@ -6,13 +6,13 @@ const Hero = () =>{
     return(
         <>
             
-                <header id="header" className={"header "+ style.header}>
+                <header id="hero" className={"header "+ style.header}>
                     <div className={"header-content "+ style.header_content}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className={style.text_container}>
-                                        <h1 style={{ color: '#00bfd8', position:'relative'}}>SD'Distribuidora <br /><span className="turquoise" style={{color: '#39393961', fontSize:'12pt', letterSpacing:'4px', position:'absolute', top:'35px'}}>QUALIDADE QUE GERA CONFIANÇA</span></h1>
+                                        <h1 style={{ color: '#00bfd8', position:'relative'}}>SD'Distribuidora <br /><span className={style.turquoise} >QUALIDADE QUE GERA CONFIANÇA</span></h1>
                                         <p className={"p-large "+ style.p_large} style={{ color: '#626262'}}> consectetur adipisicing elit. Autem earum neque asperiores incidunt quos similique quisquam doloribus, natus, reiciendis accusamus tempore provident nam numquam molestias</p>
                                         <a className="btn_solid_lg page-scroll" href="#services">ENTRAR AGORA</a>
                                     </div>                            

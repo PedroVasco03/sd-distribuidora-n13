@@ -27,6 +27,7 @@
 }
 
 .header .image_container{
+	padding: 15px;
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
     -moz-transform: translateY(-10%);
@@ -43,7 +44,13 @@
 	margin-bottom: 1.875rem;
 }
 
-
+.turquoise{
+	color: #39393961;
+	font-size: 12pt;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 35px;
+}
 
 /* Min-width width 768px */
 @media (min-width: 768px) {
@@ -82,11 +89,33 @@
 		margin-top: 3rem;
 		margin-bottom: 0;
 	}
+	
 	/* end of header */
 
 }
 /* end of min-width width 992px */
+@media (max-width: 992px) {
+	.turquoise{
+		font-size: 12pt;
+		letter-spacing: 4px;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		right: 0;
+	}
+}
 
+@media (max-width: 440px) {
+	.turquoise{
+		font-size: 30%;
+	}
+}
+
+@media (max-width: 360px) {
+	.turquoise{
+		font-size: 25%;
+	}
+}
 
 /* Min-width width 1200px */
 @media (min-width: 1200px) {
