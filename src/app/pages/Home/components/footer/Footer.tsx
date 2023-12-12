@@ -15,7 +15,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-6">
                         <nav className={style.footer_links+"  text-lg-right text-center pt-2 pt-lg-0"}>
-                            <a href="#home" className="scrollto">Home</a>
+                            <a href="#hero" className="scrollto">Home</a>
                             <a href="#about" className="scrollto">Sobre</a>
                             <a href="#">Plítica de Privacidade</a>
                             <a href="#">Termos de Uso</a>

@@ -10,7 +10,7 @@ const Navbar = () =>{
 
     const Opened = () => {
         if(open==='')
-            setOpen('nav_openNav__uraxI')
+            setOpen('nav_openNav__wTAUI')
         else
             setOpen('')
     }
@@ -21,13 +21,13 @@ const Navbar = () =>{
             <header id="header"  className={style.header+" "+open}>
                 <div className={style.contNav}>
                     <div className={style.logo}>
-                        <a href="./index.html" className={style.logoLink}> 
+                        <a href="/" className={style.logoLink}> 
                             <h1 className="logo me-auto" style={{ color: '#00bfd8'}}>SD<span style={{ color: 'rgba(0, 0, 0, 0.607)', fontSize:'0.9rem', letterSpacing:'4px'}}>distribiudora</span></h1>
                         </a>
                     </div>
                     <nav id="navbar" className={"nav "+style.nav}>
                         <ul className={style.ul}>
-                        <li><a className={style.navLink} href="#home">Home</a></li>
+                        <li><a className={style.navLink} href="#hero">Home</a></li>
                         <li><a className={style.navLink} href="#services">Serviços</a></li>
                         <li><a className={style.navLink} href="#prices">Preços</a></li>
                         <li><a className={style.navLink} href="#about">Sobre</a></li>

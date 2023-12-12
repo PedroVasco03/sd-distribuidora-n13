@@ -3,7 +3,7 @@ import style from "./price.module.css"
 const Price = () => {
     return(
         <>
-            <div id="pricing" className={style.cards_2}>
+            <div id="prices" className={style.cards_2}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
