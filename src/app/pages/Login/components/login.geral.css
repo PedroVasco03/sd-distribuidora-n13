@@ -267,10 +267,16 @@ input {
 
 	.sign-in-container {
 		width: 100%;
+		z-index: 1001;
 	}
 	
 	.container.right-panel-active .sign-in-container {
-	}
+		transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-moz-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+		-o-transform: translateX(100%);
+}
 	
 	.sign-up-container {
 		width: 100%;
@@ -282,6 +288,7 @@ input {
 }
 	
 	.container.right-panel-active .sign-up-container {
+		z-index: 1002;
 		transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-moz-transform: translateX(0);
