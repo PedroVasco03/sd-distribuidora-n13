@@ -9,7 +9,6 @@ import About from "./pages/Home/components/about/About";
 import Contact from "./pages/Home/components/contact/Contact";
 import Footer from "./pages/Home/components/footer/Footer";
 import Hero from "./pages/Home/components/hero/Hero";
-import Link from "next/link";
 
 const Home = () =>{
     return(

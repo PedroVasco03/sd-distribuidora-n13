@@ -6,7 +6,7 @@ import "./components/login.geral.css"
 import React from "react"
 import { useState } from "react"
 
-const login = () => {
+const Login = () => {
     const [panel,setPanel] = React.useState('');
     const alterar = () => {
         if(panel === '')
@@ -29,7 +29,7 @@ const login = () => {
                         <div className="overlay-panel overlay-left">
                             <h1>Bem vindo de volta!</h1>
                             <p>Para entrar, insira  suas informações pessoais</p>
-                            <button className="ghost" onClick={alterar} id="signIn">Entar</button>
+                            <button className="ghost" onClick={alterar} id="signIn">Entrar</button>
                         </div>
                         <div className="overlay-panel overlay-right">
                             <h1>Olá, Amigo!</h1>
@@ -43,4 +43,4 @@ const login = () => {
     )
 }
 
-export default login 
+export default Login 
