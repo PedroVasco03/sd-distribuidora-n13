@@ -28,9 +28,9 @@ const SignUp = () =>{
                 <div className={"grupo "+clas}>
                     <input type="text" placeholder="Nome" />
                     <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Contacto" />
+                    <input type="tel" placeholder="Contacto" />
                     <input type="text" placeholder="Município" />
-                    <Image src={img} onClick={next} className="btnI btnNext" alt="btnNext"/>
+                    <br/><Image src={img} onClick={next} className="btnI btnNext" alt="btnNext"/>
                 </div>
                 
 

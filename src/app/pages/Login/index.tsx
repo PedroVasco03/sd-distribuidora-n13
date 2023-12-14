@@ -6,7 +6,7 @@ import "./components/login.geral.css"
 import React from "react"
 import { useState } from "react"
 
-const Login = () => {
+const login = () => {
     const [panel,setPanel] = React.useState('');
     const alterar = () => {
         if(panel === '')
@@ -43,4 +43,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default login 
