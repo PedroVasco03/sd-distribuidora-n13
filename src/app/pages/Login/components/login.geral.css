@@ -228,18 +228,37 @@ input {
 	height: 40px;
 	width: 40px;
 }
-.grupo2{
-	transform: translateX(0px);
+
+.grupo{
+	transform: translateX(-800px);
 	transition: .5s ease-in-out;
 	display: none;
+}
+
+.grupo1{
+	transform: translateX(0px);
+	transition: .5s ease-in-out;
+	display: block;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	-ms-transform: translateX(0px);
 	-o-transform: translateX(0px);
 }
 
-.grupo2{
-	transform: translateX(-800px);
-	transition: .5s ease-in-out;
-	display: none;
+.btnCadastro{
+	margin-top: 10px;
+}
+
+.btnI{
+	cursor: pointer;
+	margin: 10px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+}
+
+.btnI:hover{
+	scale: 1.1;
 }

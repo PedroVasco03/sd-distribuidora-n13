@@ -3,33 +3,44 @@
 import React from "react"
 import { useState } from "react"
 import img from "../../assets/images/next.png"
+import img2 from "../../assets/images/back.png"
 import Image from "next/image"
 
 const SignUp = () =>{
     const[clas,setClas]= React.useState('grupo1')
+    const[clas2,setClas2]= React.useState('')
     const next = () => {
         if(clas === 'grupo1')
-            setClas('grupo2')
+            setClas('')
+        else
+            setClas('grupo1')
+
+        if(clas2 === '')
+            setClas2('grupo1')
+        else
+            setClas2('')
     }
     return(
         <>
             <form action="#">
                 <h1>Criar Conta</h1>
                 {/* nome,email,senha,nva,rua,municipio,contacto,bairro */}
-                <div className="grupo1">
+                <div className={"grupo "+clas}>
                     <input type="text" placeholder="Nome" />
                     <input type="email" placeholder="Email" />
                     <input type="text" placeholder="Contacto" />
                     <input type="text" placeholder="Município" />
-                    <Image src={img} alt="btnAvanço"/>
+                    <Image src={img} onClick={next} className="btnI btnNext" alt="btnNext"/>
                 </div>
                 
 
-                <div className="grupo2">
+                <div className={"grupo "+clas2}>
                     <input type="text" placeholder="Bairro" />
                     <input type="text" placeholder="Rua" />
                     <input type="password" placeholder="Senha" />
-                    <button>Cadastrar</button>
+                    
+                    <button className="btnCadastro">Cadastrar</button> <br/>
+                    <Image src={img2} onClick={next} className="btnI btnPrev" alt="btnPrev"/>
                 </div>
                 
             </form>
