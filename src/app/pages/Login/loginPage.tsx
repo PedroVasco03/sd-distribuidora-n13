@@ -29,12 +29,12 @@ const Login = () => {
                         <div className="overlay-panel overlay-left">
                             <h1>Bem vindo de volta!</h1>
                             <p>Para entrar, insira  suas informações pessoais</p>
-                            <button className="ghost" onClick={alterar} id="signIn">Sign In</button>
+                            <button className="ghost" onClick={alterar} id="signIn">Entar</button>
                         </div>
                         <div className="overlay-panel overlay-right">
                             <h1>Olá, Amigo!</h1>
                             <p>Insira seus dados pessoais e comece sua jornada conosco</p>
-                            <button className="ghost" onClick={alterar} id="signUp">Sign Up</button>
+                            <button className="ghost" onClick={alterar} id="signUp">Cdastrar</button>
                         </div>
                     </div>
                 </div>
