@@ -22,24 +22,24 @@ const SignUp = () =>{
     }
     return(
         <>
-            <form action="#">
-                <h1>Criar Conta</h1>
+            <form className="form" action="#">
+                <h1 className="h1">Criar Conta</h1>
                 {/* nome,email,senha,nva,rua,municipio,contacto,bairro */}
                 <div className={"grupo "+clas}>
-                    <input type="text" placeholder="Nome" />
-                    <input type="email" placeholder="Email" />
-                    <input type="tel" placeholder="Contacto" />
-                    <input type="text" placeholder="Município" />
+                    <input className="input" type="text" placeholder="Nome" />
+                    <input className="input" type="email" placeholder="Email" />
+                    <input className="input" type="tel" placeholder="Contacto" />
+                    <input className="input" type="text" placeholder="Município" />
                     <br/><Image src={img} onClick={next} className="btnI btnNext" alt="btnNext"/>
                 </div>
                 
 
                 <div className={"grupo "+clas2}>
-                    <input type="text" placeholder="Bairro" />
-                    <input type="text" placeholder="Rua" />
-                    <input type="password" placeholder="Senha" />
+                    <input className="input" type="text" placeholder="Bairro" />
+                    <input className="input" type="text" placeholder="Rua" />
+                    <input className="input" type="password" placeholder="Senha" />
                     
-                    <button className="btnCadastro">Cadastrar</button> <br/>
+                    <button className="btnCadastro button">Cadastrar</button> <br/>
                     <Image src={img2} onClick={next} className="btnI btnPrev" alt="btnPrev"/>
                 </div>
                 

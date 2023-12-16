@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-body {
+.body {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
@@ -17,16 +17,16 @@ body {
 	width: 100%;
 }
 
-h1 {
+.h1 {
 	font-weight: bold;
 	margin: 0;
 }
 
-h2 {
+.h2 {
 	text-align: center;
 }
 
-p {
+.p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -34,18 +34,18 @@ p {
 	margin: 20px 0 30px;
 }
 
-span {
+.span {
 	font-size: 12px;
 }
 
-a {
+.a {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
-button {
+.button {
 	border-radius: 20px;
 	border: 1px solid #00bfd8;
 	background-color: #00bfd8;
@@ -58,20 +58,20 @@ button {
 	transition: transform 80ms ease-in;
 }
 
-button:active {
+.button:active {
 	transform: scale(0.95);
 }
 
-button:focus {
+.button:focus {
 	outline: none;
 }
 
-button.ghost {
+.button.ghost {
 	background-color: transparent;
 	border-color: #FFFFFF;
 }
 
-form {
+.form {
 	background-color: #FFFFFF;
 	display: flex;
 	align-items: center;
@@ -80,9 +80,10 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	font-family: 'Montserrat';
 }
 
-input {
+.input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
@@ -90,7 +91,7 @@ input {
 	width: 100%;
 }
 
-.container {
+.container-login {
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
@@ -100,6 +101,7 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+	font-family: 'Montserrat';
 }
 
 .form-container {
@@ -109,15 +111,17 @@ input {
 	transition: all 0.6s ease-in-out;
 	overflow-y: auto;
 	padding: 20px 0;
+	font-family: 'Montserrat';
 }
 
 .sign-in-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
+	font-family: 'Montserrat';
 }
 
-.container.right-panel-active .sign-in-container {
+.container-login.right-panel-active .sign-in-container {
 	transform: translateX(100%);
 }
 
@@ -126,9 +130,10 @@ input {
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
+	font-family: 'Montserrat';
 }
 
-.container.right-panel-active .sign-up-container {
+.container-login.right-panel-active .sign-up-container {
 	transform: translateX(100%);
 	opacity: 1;
 	z-index: 5;
@@ -162,7 +167,7 @@ input {
 	z-index: 100;
 }
 
-.container.right-panel-active .overlay-container{
+.container-login.right-panel-active .overlay-container{
 	transform: translateX(-100%);
 }
 
@@ -182,7 +187,7 @@ input {
 	transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.container-login.right-panel-active .overlay {
   	transform: translateX(50%);
 }
 
@@ -205,7 +210,7 @@ input {
 	transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.container-login.right-panel-active .overlay-left {
 	transform: translateX(0);
 }
 
@@ -214,7 +219,7 @@ input {
 	transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.container-login.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
 
@@ -253,10 +258,10 @@ input {
 }
 
 @media (max-width:820px){
-	input{
+	.input{
 		width: 80%;
 	}
-	.container{
+	.container-login{
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -273,7 +278,7 @@ input {
 		z-index: 1001;
 	}
 	
-	.container.right-panel-active .sign-in-container {
+	.container-login.right-panel-active .sign-in-container {
 		transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 		-moz-transform: translateX(100%);
@@ -290,7 +295,7 @@ input {
 		-o-transform: translateX(-100%);
 }
 	
-	.container.right-panel-active .sign-up-container {
+	.container-login.right-panel-active .sign-up-container {
 		z-index: 1002;
 		transform: translateX(0);
 		-webkit-transform: translateX(0);
@@ -307,7 +312,7 @@ input {
 		left: 0;
 	}
 	
-	.container.right-panel-active .overlay-container{
+	.container-login.right-panel-active .overlay-container{
 		transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-moz-transform: translateX(0);
@@ -324,7 +329,7 @@ input {
 		right: 0;
 	}
 	
-	.container.right-panel-active .overlay {
+	.container-login.right-panel-active .overlay {
 		transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-moz-transform: translateX(0);
@@ -344,7 +349,7 @@ input {
 		-o-transform: translateX(-100%);
 }
 	
-	.container.right-panel-active .overlay-left {
+	.container-login.right-panel-active .overlay-left {
 		transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-moz-transform: translateX(0);
@@ -360,7 +365,7 @@ input {
 		-o-transform: translateX(0);
 }
 	
-	.container.right-panel-active .overlay-right {
+	.container-login.right-panel-active .overlay-right {
 		transform: translateX(100%);
 		-webkit-transform: translateX(100%);
 		-moz-transform: translateX(100%);
@@ -370,7 +375,7 @@ input {
 }
 
 @media (max-width:420px){
-	input{
+	.input{
 		width: 100%;
 	}
 }
