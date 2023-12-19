@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const SignIn = () =>{
     return(
         <>
@@ -6,7 +8,7 @@ const SignIn = () =>{
                         <input className="input" type="email" placeholder="Email" />
                         <input className="input" type="password" placeholder="Password" />
                         <a className="a" href="#">Esqueceu a senha?</a>
-                        <button className="button">Entrar</button>
+                        <Link href="../user/pages/home"><button className="button">Entrar</button></Link> 
                     </form>
         </>
     )

@@ -2,6 +2,7 @@ import style from "./about.module.css"
 import Image from "next/image"
 import imagem1 from "../../assets/images/about-img4.jpg"
 import imagem2 from "../../assets/images/about-img5.jpg"
+import Link from "next/link"
 const About = () => {
     return(
         <>
@@ -19,7 +20,7 @@ const About = () => {
                                     enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                                     in reprehenderit in voluptate velit</p>
-                                    <a href="" className="btn_solid_lg">ENTRAR</a>
+                                    <Link href="/pages/login" className="btn_solid_lg page-scroll">ENTRAR</Link>
                                 </div>
                             </div>
                             <div className="col-md-6">
