@@ -20,7 +20,7 @@ const About = () => {
                                     enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                                     nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                                     in reprehenderit in voluptate velit</p>
-                                    <Link href="/pages/login" className="btn_solid_lg page-scroll">ENTRAR</Link>
+                                    <Link href="/Login" className="btn_solid_lg page-scroll">ENTRAR</Link>
                                 </div>
                             </div>
                             <div className="col-md-6">
