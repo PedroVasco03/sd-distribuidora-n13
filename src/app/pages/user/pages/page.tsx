@@ -8,7 +8,7 @@ const UserHome = () => {
     return(
         <>
             <Navu/>
-            {/* <Sidebar/> */}
+            <Sidebar/>
             <h1>Home USer</h1>
         </>
     )

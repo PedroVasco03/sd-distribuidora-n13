@@ -58,10 +58,10 @@ const Sidebar = () => {
                             </Link>
                             <Link className={style.Link} href="#">   
                                 <li className={style.sideLink} style={{
-                                    fontWeight: currentRoute === "/pages/user/pages/profile" ? 700 :" ",
-                                    backgroundColor: currentRoute === "/pages/user/pages/profile" ? "#00bfd8" : "",
-                                    color: currentRoute === "/pages/user/pages/profile" ? "#fff" :" ",
-                                    marginLeft: currentRoute === "/pages/user/pages/profile" ? "-20%" : "",
+                                    fontWeight: currentRoute === "/pages/user/pages/settings" ? 700 :" ",
+                                    backgroundColor: currentRoute === "/pages/user/pages/settings" ? "#00bfd8" : "",
+                                    color: currentRoute === "/pages/user/pages/settings" ? "#fff" :" ",
+                                    marginLeft: currentRoute === "/pages/user/pages/settings" ? "-20%" : "",
                                 }}>
                                     <i className="fas fa-user"></i>
                                     <div className={style.Link}>Perfil</div>

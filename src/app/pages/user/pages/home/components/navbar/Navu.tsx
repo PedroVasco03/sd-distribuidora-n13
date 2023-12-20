@@ -9,7 +9,8 @@ import Link from "next/link"
 const Navu = () => {
 
     const [css, setCss] = useState('')
-   
+    const currentRoute = usePathname();
+
     function toggleMenu(){
         if(css==='') 
             setCss('nav_open_menu__SMfca')
@@ -36,31 +37,45 @@ const Navu = () => {
                                 <h2>Nome de usuario</h2>
                             </div>
                             <hr/>
-                            <a href="/aluno/chat" className={style.sub_menu_link}>
-                                <i className="fas fa-home"></i>
-                                <p>Home</p>
-                                <i className="bi bi-arrow-right-short"></i>
-                            </a>
-                            <a href="/aluno/agendar" className={style.sub_menu_link}>
-                                <i className="fas fa-paper-plane "></i>
-                                <p>Pedido</p>
-                                <i className="bi bi-arrow-right-short"></i>
-                            </a>
-                            <a href="/aluno/pedido" className={style.sub_menu_link}>
-                                <i className="fas fa-comments"></i>
-                                <p>Comunidade</p>
-                                <i className="bi bi-arrow-right-short"></i>
-                            </a>
-                            <a href="/aluno/definicoes" className={style.sub_menu_link}>
-                                <i className="fas fa-user"></i>
-                                <p>Perfil</p>
-                                <i className="bi bi-arrow-right-short"></i>
-                            </a>
-                            <a href="/" className={style.sub_menu_link} >
+                            <Link className={style.sub_menu_link} href="/pages/user/pages" style={{
+                                    fontWeight: currentRoute === "/pages/user/pages" ? 700 :" ",
+                                    color: currentRoute === "/pages/user/pages" ? "#00bfd8" : "",
+                                    marginLeft: currentRoute === "/pages/user/pages" ? "10%" : "",
+                                }}> 
+                                    <i className="fas fa-home"></i>
+                                    <p>Home</p>
+                            </Link>
+
+                            <Link className={style.sub_menu_link} href="/pages/user/pages/request" style={{
+                                    fontWeight: currentRoute === "/pages/user/pages/request" ? 700 :" ",
+                                    color: currentRoute === "/pages/user/pages/request" ? "#00bfd8" : "",
+                                    marginLeft: currentRoute === "/pages/user/pages/request" ? "10%" : "",
+                                }}> 
+                                    <i className="fas fa-paper-plane "></i>
+                                    <p>Pedido</p>
+                            </Link>
+
+                            <Link className={style.sub_menu_link} href="/pages/user/pages/chat" style={{
+                                    fontWeight: currentRoute === "/pages/user/pages/chat" ? 700 :" ",
+                                    color: currentRoute === "/pages/user/pages/chat" ? "#00bfd8" : "",
+                                    marginLeft: currentRoute === "/pages/user/pages/chat" ? "10%" : "",
+                                }}> 
+                                    <i className="fas fa-comments"></i>
+                                    <p>Comunidade</p>
+                            </Link>
+
+                            <Link className={style.sub_menu_link} href="/pages/user/pages/settings" style={{
+                                    fontWeight: currentRoute === "/pages/user/pages/settings" ? 700 :" ",
+                                    color: currentRoute === "/pages/user/pages/settings" ? "#00bfd8" : "",
+                                    marginLeft: currentRoute === "/pages/user/pages/settings" ? "10%" : "",
+                                }}> 
+                                    <i className="fas fa-user"></i>
+                                    <p>Perfil</p>
+                            </Link>
+                            <Link href="/" className={style.sub_menu_link} >
                                 <i className="fas fa-sign-out"></i>
                                 <p>Sair</p>
-                                <i className="bi bi-arrow-right-short"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     
