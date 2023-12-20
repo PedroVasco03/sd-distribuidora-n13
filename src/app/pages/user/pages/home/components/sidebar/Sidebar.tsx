@@ -34,7 +34,7 @@ const Sidebar = () => {
                                     <div className={style.Link}>Home</div>
                                 </li>
                             </Link>
-                            <Link className={style.Link} href="#"> 
+                            <Link className={style.Link} href="/pages/user/pages/request"> 
                                 <li className={style.sideLink} style={{
                                     fontWeight: currentRoute === "/pages/user/pages/request" ? 700 :" ",
                                     backgroundColor: currentRoute === "/pages/user/pages/request" ? "#00bfd8" : "",
@@ -45,7 +45,7 @@ const Sidebar = () => {
                                     <div className={style.Link}>Fazer Pedido</div>
                                 </li>
                             </Link>
-                            <Link className={style.Link} href="#"> 
+                            <Link className={style.Link} href="/pages/user/pages/chat"> 
                                 <li className={style.sideLink} style={{
                                     fontWeight: currentRoute === "/pages/user/pages/chat" ? 700 :" ",
                                     backgroundColor: currentRoute === "/pages/user/pages/chat" ? "#00bfd8" : "",
@@ -56,7 +56,7 @@ const Sidebar = () => {
                                     <div className={style.Link}>Comunidade</div>
                                 </li>
                             </Link>
-                            <Link className={style.Link} href="#">   
+                            <Link className={style.Link} href="/pages/user/pages/settings">   
                                 <li className={style.sideLink} style={{
                                     fontWeight: currentRoute === "/pages/user/pages/settings" ? 700 :" ",
                                     backgroundColor: currentRoute === "/pages/user/pages/settings" ? "#00bfd8" : "",
