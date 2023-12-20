@@ -13,7 +13,7 @@ const Navu = () => {
 
     function toggleMenu(){
         if(css==='') 
-            setCss('nav_open_menu__SMfca')
+            setCss('nav_open_menu__m2X8Q')
         else
             setCss('')
     }
