@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import style from "./nav.module.css"
@@ -10,7 +11,7 @@ const Navbar = () =>{
 
     const Opened = () => {
         if(open==='')
-            setOpen('nav_openNav__wTAUI')
+            setOpen('nav_openNav__0UtmB')
         else
             setOpen('')
     }

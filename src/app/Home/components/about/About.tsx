@@ -15,11 +15,10 @@ const About = () => {
                                     <div className={style.heading_container}>
                                         <h2>Sobre Nós</h2>
                                     </div>
-                                    <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                    in reprehenderit in voluptate velit</p>
+                                    <p >A Santos Distribuidora é uma empresa cujos objetivos principais são a sua satisfação
+                                        e bem-estar, ao nosso lado você aproveita da mais rica qualidade nacional, disciplina e higiene
+                                        embarque conosco numa jornada divertida e organizada, efetue o seu pedido e deixe a sua opinião
+                                        estamos aqui para servir, então o que será?</p>
                                     <Link href="/Login" className="btn_solid_lg page-scroll">ENTRAR</Link>
                                 </div>
                             </div>

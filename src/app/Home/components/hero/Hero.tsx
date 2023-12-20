@@ -14,7 +14,8 @@ const Hero = () =>{
                                 <div className="col-lg-6">
                                     <div className={style.text_container}>
                                         <h1 style={{ color: '#00bfd8', position:'relative'}}>SD'Distribuidora <br /><span className={style.turquoise} >QUALIDADE QUE GERA CONFIANÇA</span></h1>
-                                        <p className={"p-large "+ style.p_large} style={{ color: '#626262'}}> consectetur adipisicing elit. Autem earum neque asperiores incidunt quos similique quisquam doloribus, natus, reiciendis accusamus tempore provident nam numquam molestias</p>
+                                        <p className={"p-large "+ style.p_large} style={{ color: '#626262'}}>Olá, seja bem vindo ao nosso sistema, fique a par de todas as novidades,
+                                         Chegue mais perto, clique no botão a baixo e conheça tudo que o nosso sistema proporciona para si consumidor.</p>
                                         
                                         <Link href="/Login" className="btn_solid_lg page-scroll">ENTRAR AGORA</Link>
                                     </div>                            

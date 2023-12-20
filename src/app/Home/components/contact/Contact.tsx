@@ -42,9 +42,9 @@ const Contact = () => {
                                         if(nome === ''){
                                             setEmpynome('')
                                         }else{
-                                            setEmpynome('contact_notEmpty__GIj8s') 
+                                            setEmpynome('contact_notEmpty__Whgic') 
                                         }}}/>
-                                    <label className={style.label_control} >Name</label>
+                                    <label className={style.label_control} >Nome</label>
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group}>
@@ -55,7 +55,7 @@ const Contact = () => {
                                         if(email === ''){
                                             setEmpyemail('')
                                         }else{
-                                            setEmpyemail('contact_notEmpty__GIj8s') 
+                                            setEmpyemail('contact_notEmpty__Whgic') 
                                         }}}/>
                                     <label className={style.label_control} >Email</label>
                                     <div className={style.help_block+" "+ style.with_errors}></div>
@@ -68,10 +68,10 @@ const Contact = () => {
                                         if(message === ''){
                                             setEmpymessage('')
                                         }else{
-                                            setEmpymessage('contact_notEmpty__GIj8s') 
+                                            setEmpymessage('contact_notEmpty__Whgic') 
                                         }}}
                                     />
-                                    <label className={style.label_control} >Your message</label>
+                                    <label className={style.label_control} >Sua mensagem</label>
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group+" checkbox"}>

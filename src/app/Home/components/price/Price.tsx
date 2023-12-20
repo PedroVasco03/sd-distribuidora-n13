@@ -8,7 +8,7 @@ const Price = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <h2>Multiplas Opções de Preços</h2>
-                            <p className="p-heading p-large">We've prepared pricing plans for all budgets so you can get started right away. <br /> They're great for small companies and large organizations</p>
+                            <p className="p-heading p-large">Preparamos planos de preços para todos os orçamentos para que você possa pedir imediatamente. <br /> Eles são ótimos para pequenas empresas, grandes organizações e consumo familiar.</p>
                         </div> 
                     </div>
 

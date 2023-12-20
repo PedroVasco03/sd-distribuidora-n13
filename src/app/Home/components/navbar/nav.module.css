@@ -1,3 +1,4 @@
+@import url('../../../../Assets/fonts/geral.fontes.css');
 
 .header{
     width: 100%;
@@ -122,7 +123,7 @@
     right: 20px;
     font-size: 25px;
     cursor: pointer;
-    display: none;
+    display: none !important;
     z-index: 10001;
 }
 
@@ -184,19 +185,20 @@
         text-align: center;
     }
     .mobile_togle{
-        display: block;
+        display: block !important;
     }  
 
     .close{
-        display: none;
+        display: none !important;
     }
 
     .openNav .close{
-        display: block;
+        display: block !important;
     }
     .openNav .open{
-        display: none;
+        display: none !important;
         
     }
 }
+
 
