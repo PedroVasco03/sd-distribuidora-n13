@@ -1,0 +1,210 @@
+.section_heading {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .section_heading h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4da6e7;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .section_heading h4 {
+    color: #2a2a2a;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+  
+  .section_heading h4 em {
+    font-style: normal;
+    color: #4da6e7;
+  }
+  
+  .section_heading .line_dec {
+    width: 50px;
+    height: 2px;
+    background-color: #4da6e7;
+  }
+
+.services {
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .services:after {
+    content: '';
+    background-image: url(../../assets/images/services-left-dec.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 786px;
+    height: 217px;
+    z-index: 0;
+  }
+  
+  .services:before {
+    content: '';
+    background-image: url(../../assets/images/services-right-dec.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 161px;
+    height: 413px;
+    z-index: 0;
+  }
+  
+  .services .section_heading {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .services .section_heading .line_dec {
+    margin: 0 auto;
+  }
+  
+  .services .naccs {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .services .icon {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .services .naccs .menu div h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+  }
+  
+  .services .icon img {
+    margin-bottom: 10px;
+    max-width: 60px;
+    min-width: 60px;
+  }
+  
+  .services .naccs .menu {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .services .naccs .menu .card{
+    color: #2a2a2a;
+    margin: 0px;
+    width: 15%;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+   .services .naccs .menu div .thumb {
+    box-sizing: border-box;
+    min-width: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+  } 
+  
+  .services .naccs .menu div.active {
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  }
+  
+  .services ul.nacc {
+    height: 100% !important;
+    position: relative;
+    min-height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .services ul.nacc li {
+    opacity: 0;
+    transform: translateX(-50px);
+    position: absolute;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .services ul.nacc li.active {
+    transition-delay: 0.3s;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0px);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 80px 120px 50px 120px;
+  }
+  
+  .services ul.nacc li {
+    width: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .services:after {
+        width: 70%;
+      }
+      
+      .services:before {
+        width: 30%;
+      }
+    .service-item {
+      text-align: center;
+      padding: 30px;
+    }
+    .service-item .icon {
+      float: none;
+      margin-right: 0px;
+      margin-bottom: 15px;
+    }
+    .service-item .right-content {
+      display: inline-block;
+    }
+    .services .naccs .menu div .thumb {
+      padding: 5px;
+    }
+    .services .icon img {
+      margin: 0px;
+    }
+    .services ul.nacc li.active {
+      padding: 45px;
+    }
+    .services .naccs .menu div  {
+      font-size: 0px;
+    }
+    .services ul.nacc li .right-image img {
+      float: none;
+    }
+    .our-services .section-heading {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
