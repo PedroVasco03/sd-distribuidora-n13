@@ -2,7 +2,6 @@ import style from './chat.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import i1 from '../assets/images/logoS.png'
-import i2 from '../assets/images/logo.png'
 import i3 from '../assets/images/profile_user.png'
 
 const Chatu = () => {
