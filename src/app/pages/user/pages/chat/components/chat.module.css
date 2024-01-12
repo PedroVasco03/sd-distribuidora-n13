@@ -185,7 +185,7 @@
     line-height: 1.5;
     min-width: 80%;
     max-width: 80%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     padding: 10px;
     border-radius: 15px ;
@@ -258,6 +258,10 @@
     .chat{
         margin-top: 70px;
         height: calc(100vh - 70px);
+    }
+
+    .inputGroup .formControl{
+        font-size: .8rem;
     }
 }
 
