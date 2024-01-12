@@ -1,13 +1,23 @@
 import Navu from "../components/navbar/Navu"
 import Sidebar from "../components/sidebar/Sidebar"
+import '../layout.css'
+import Chatu from "./components/Chatu"
 
 const Comunity = () => {
     return(
         <>
-            <Sidebar/>
             <Navu/>
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia laudantium velit amet vero tempore sed qui explicabo deserunt voluptates dolor. Sint eius ipsam est deleniti recusandae earum ut alias itaque? Comunity</h1>
-        </>
+            <div className="Cgeral">
+                <div className="Cside">
+                   <Sidebar/> 
+                </div>
+                
+                <div className="Cconteudo">
+                    <Chatu/>
+                </div>
+                
+            </div>
+            </>
     )
 }
 
