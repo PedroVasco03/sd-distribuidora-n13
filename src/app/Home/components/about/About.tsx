@@ -19,7 +19,7 @@ const About = () => {
                                         e bem-estar, ao nosso lado você aproveita da mais rica qualidade nacional, disciplina e higiene
                                         embarque conosco numa jornada divertida e organizada, efetue o seu pedido e deixe a sua opinião
                                         estamos aqui para servir, então o que será?</p>
-                                    <Link href="/Login" className="btn_solid_lg page-scroll">ENTRAR</Link>
+                                    <Link href="/login" className="btn_solid_lg page-scroll">ENTRAR</Link>
                                 </div>
                             </div>
                             <div className="col-md-6">

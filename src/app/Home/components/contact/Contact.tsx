@@ -2,6 +2,7 @@
 import React from "react"
 import { useState } from "react"
 import style from "./contact.module.css"
+import post from "@/app/services/post";
 
 const Contact = () => {
     const [nome, setNome] = React.useState('');
@@ -10,6 +11,19 @@ const Contact = () => {
     const [empynome, setEmpynome] = React.useState('')
     const [empyemail, setEmpyemail] = React.useState('')
     const [empymessage, setEmpymessage] = React.useState('')
+    const handleForm = (e)=>{
+        e.preventDefault()
+        if(nome && email && message){
+            const data = {
+                nome: nome,
+                email: email,
+                mensagem: message
+            }
+            
+            post('feedback', data)
+           alert('salvo com sucesso')
+        }
+    }
     return(
         <>
              <div id="contact" className={style.form_2}>
@@ -21,7 +35,7 @@ const Contact = () => {
                                 <li className={style.address}>Não hesite em nos ligar ou enviar uma mensagem pelo formulário de contato</li>
                                 <li><i className={style.fas+" fas fa-map-marker-alt"}/>Samba Mutamba, Luanda, Angola, AO</li>
                                 <li><i className={style.fas+" fas fa-phone"}/><a className="turquoise" href="tel:003024630820">+244 992-177-520</a></li>
-                                <li><i className={style.fas+" fas fa-envelope"}/><a className="turquoise" href="mailto:office@evolo.com">santosd07@gmail.com</a></li>
+                                <li><i className={style.fas+" fas fa-envelope"}/><a className="turquoise" href="mailto:office@evolo.com">santosd07@gmail.com</a></li> 
                             </ul>
                         </div>
                     </div>
@@ -33,7 +47,7 @@ const Contact = () => {
                         </div>
                         <div className="col-lg-6">
                             
-                            <form id="contactForm" data-toggle="validator" data-focus="false">
+                            <form id="contactForm" data-toggle="validator" data-focus="false" onSubmit={handleForm}>
                                 <div className={style.form_group}>
                                     <input type="text" className={style.form_control_input+" "+empynome} id="cname" required
                                      onChange={
@@ -79,7 +93,7 @@ const Contact = () => {
                                     <div className={style.help_block+" "+ style.with_errors}></div>
                                 </div>
                                 <div className={style.form_group}>
-                                    <button type="submit" className={style.form_control_submit_button}>SUBMIT MESSAGE</button>
+                                    <button className={style.form_control_submit_button}>SUBMIT MESSAGE</button>
                                 </div>
                                 <div className="form-message">
                                     <div id="cmsgSubmit" className="h3 text-center hidden"></div>

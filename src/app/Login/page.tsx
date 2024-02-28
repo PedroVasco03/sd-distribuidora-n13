@@ -23,7 +23,7 @@ const Login = () => {
                         <SignUp/>
                     </div>
                     <div className="form-container sign-in-container">
-                        <SignIn/>
+                            <SignIn/>
                     </div>
                     <div className="overlay-container">
                         <div className="overlay">

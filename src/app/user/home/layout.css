@@ -1,0 +1,28 @@
+.Cgeral{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+}
+
+.Cside{
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Cconteudo{
+    width: calc(100% - 260px);
+    overflow-x: hidden;
+}
+
+@media (max-width:768px){
+    .Cside{
+        display: none;
+    }
+
+    .Cconteudo{
+        width: 100%;
+    }
+}

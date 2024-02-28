@@ -1,0 +1,21 @@
+
+.Aside{
+    width: 350px;
+    height: 100vh;
+    border-right: 2px solid #f2f1f1;
+   
+}
+
+.Logo{
+    font-size: 1.7rem;
+    color: #5D87FF;
+    text-align: center;   
+    font-family: 'Lato';
+}
+.style{
+    font-size: 1.1rem;
+    color: #03bb99;
+}
+
+
+

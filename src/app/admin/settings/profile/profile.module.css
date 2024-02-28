@@ -1,0 +1,86 @@
+.geral{
+    width:100%;
+    height: 100%;
+    background-Color:#f9f9fa;
+    min-Height:100dvh;
+    display:flex;
+    align-Items:center;
+    flex-Direction:column;
+}
+
+.padding {
+    padding: 3rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,0.08);
+    border: none;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card .userprofile {
+    border-radius: 5px 0 0 5px;
+}
+
+.bg {
+        background: -webkit-gradient(linear, left top, right top, from(#00bfd8), to(#019eb3));
+    background: linear-gradient(to right, #019eb3, #00bfd8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userprofile {
+    padding: 20px 0;
+}
+
+.cardblock {
+    padding: 1.25rem;
+}
+
+
+.imgradius {
+    border-radius: 5px;
+}
+
+.card h6 {
+    font-size: 14px;
+}
+
+.card .cardblock p {
+    line-height: 25px;
+}
+
+@media only screen and (min-width: 1400px){
+.card p {
+    font-size: 14px;
+}
+}
+
+.card .cardblock p {
+    line-height: 25px;
+}
+
+
+.textmuted {
+    color: #919aa3 !important;
+}
+
+@media (max-width: 768px){
+    .geral{
+        margin-top: 70px;
+    }
+
+    .padding {
+        padding: 1rem;
+    }
+}

@@ -5,8 +5,7 @@ import Link from 'next/link';
 
 const Hero = () =>{
     return(
-        <>
-            
+        <>            
                 <header id="hero" className={"header "+ style.header}>
                     <div className={"header-content "+ style.header_content}>
                         <div className="container">
@@ -17,7 +16,7 @@ const Hero = () =>{
                                         <p className={"p-large "+ style.p_large} style={{ color: '#626262'}}>Olá, seja bem vindo ao nosso sistema, fique a par de todas as novidades,
                                          Chegue mais perto, clique no botão a baixo e conheça tudo que o nosso sistema proporciona para si consumidor.</p>
                                         
-                                        <Link href="/Login" className="btn_solid_lg page-scroll">ENTRAR AGORA</Link>
+                                        <Link href="/login" className="btn_solid_lg page-scroll">ENTRAR AGORA</Link>
                                     </div>                            
                                     </div>                                
                                     <div className="col-lg-6">

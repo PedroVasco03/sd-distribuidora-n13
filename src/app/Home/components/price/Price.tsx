@@ -20,7 +20,7 @@ const Price = () => {
                                     <div className={style.card_subtitle+" card-subtitle"}>1.000 à 5.000 <span style={{color:'#00bfd8', fontWeight:'600'}}>(L)</span></div>
                                     <hr className={style.cell_divide_hr}/>
                                     <div className={style.price}>
-                                        <span className={style.currency}>$</span><span className={style.value}>9,61</span>
+                                        <span className={style.currency}>KZ</span><span className={style.value}>15.000</span>
                                         <div className={style.frequency}>por abastecimento</div>
                                     </div>
                                     <hr className={style.cell_divide_hr}/>
@@ -54,7 +54,7 @@ const Price = () => {
                                     <div className={style.card_subtitle+" card-subtitle"}>6.000 à 12.000 <span style={{color:'#00bfd8', fontWeight:'600'}}>(L)</span></div>
                                     <hr className={style.cell_divide_hr}/>
                                     <div className={style.price}>
-                                        <span className={style.currency}>$</span><span className={style.value}>21,62</span>
+                                        <span className={style.currency}>KZ</span><span className={style.value}>30.000</span>
                                         <div className={style.frequency}>por abastecimento</div>
                                     </div>
                                     <hr className={style.cell_divide_hr}/>
@@ -88,7 +88,7 @@ const Price = () => {
                                     <div className={style.card_subtitle+" card-subtitle"}>Mais de 12.000 <span style={{color:'#00bfd8', fontWeight:'600'}}>(L)</span></div>
                                     <hr className={style.cell_divide_hr}/>
                                     <div className={style.price}>
-                                        <span className={style.currency}>$</span><span className={style.value}>0...</span>
+                                        <span className={style.currency}>KZ</span><span className={style.value}>...</span>
                                         <div className={style.frequency}>por abastecimento</div>
                                     </div>
                                     <hr className={style.cell_divide_hr}/>
