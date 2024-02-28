@@ -85,7 +85,7 @@ const Chatu = () => {
                             :
                             <div className="d-flex justify-content-end mb-5 mt-5">
                                 <div className={style.msg_cotainer_send +" "+style.msg}>
-                                    <span className={style.usernameI}>SDD - ADM {item.remitente}</span>
+                                    <span  className={style.usernameI}>SDD - ADM {item.remitente}</span>
                                         {item.sms}
                                         <br />
                                         <span className={style.msg_time_send}>{item.datanow}</span>
@@ -106,7 +106,7 @@ const Chatu = () => {
                                 <label className='fas fa-paperclip' htmlFor="arquivo" style={{cursor:'pointer'}}></label>
                             </div>
                             <textarea value={message} onChange={(e)=>setMessage(e.target.value)} name="" className={style.formControl} placeholder="Digite sua mensagem" id="" ></textarea>
-                            <button type='submit' className={style.inputGroupAddon}>
+                            <button type='submit'  className={style.inputGroupAddon}>
                                     <i className='fas fa-paper-plane'></i>
                             </button>
                         </div>

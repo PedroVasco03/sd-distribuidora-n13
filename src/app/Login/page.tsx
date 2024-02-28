@@ -1,29 +1,29 @@
 "use client"
 
-import SignIn from "./components/login/SignIn"
-import SignUp from "./components/register/SignUp"
-import "./components/login.geral.css"
-import React from "react"
-import { useState } from "react"
+import React, { useState } from "react";
+import SignIn from "./components/login/SignIn";
+import SignUp from "./components/register/SignUp";
+import "./components/login.geral.css";
 
-const Login = () => {
-    const [panel,setPanel] = React.useState('');
+const Login: React.FC = () => {
+    const [panel, setPanel] = useState<string>('');
+
     const alterar = () => {
-        if(panel === '')
-            setPanel('right-panel-active')
+        if (panel === '')
+            setPanel('right-panel-active');
         else
-            setPanel('')
-    }
+            setPanel('');
+    };
 
-    return(
+    return (
         <>
             <div className="body">
-                <div className={"container-login "+ panel} id="container"> 
+                <div className={"container-login " + panel} id="container">
                     <div className="form-container sign-up-container">
-                        <SignUp/>
+                        <SignUp />
                     </div>
                     <div className="form-container sign-in-container">
-                            <SignIn/>
+                        <SignIn />
                     </div>
                     <div className="overlay-container">
                         <div className="overlay">
@@ -42,7 +42,7 @@ const Login = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Login 
+export default Login;

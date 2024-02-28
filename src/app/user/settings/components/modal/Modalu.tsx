@@ -1,21 +1,22 @@
-"use client"
-import { useState } from 'react'
-import style from './modal.module.css'
-import update from '@/app/services/update'
-import { useRouter } from 'next/navigation'
-const Modal = () => {
-    const [nome, setNome] = useState('')
-    const [email, setEmail] = useState('')
-    const [telefone, setTelefone] = useState('')
-    const [municipio, setMunicipio] = useState('')
-    const [rua, setRua] = useState('')
-    const [senha, setSenha] = useState('')
-    const [bairro, setBairro] = useState('')
-    const router = useRouter()
-    const handleSubmit = (e)=>{
-        e.preventDefault()
-        if(nome !="" && telefone !="" && municipio !="" && rua !="" && senha !="" && bairro !="" && email !=""){
-            const dado = JSON.parse(sessionStorage.user)
+import { useState, FormEvent } from 'react';
+import style from './modal.module.css';
+import update from '@/app/services/update';
+import { useRouter } from 'next/navigation';
+
+const Modal: React.FC = () => {
+    const [session, setSession] = useState(!sessionStorage.user ? [] : JSON.parse(sessionStorage.user))
+    const [nome, setNome] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [telefone, setTelefone] = useState<string>('');
+    const [municipio, setMunicipio] = useState<string>('');
+    const [rua, setRua] = useState<string>('');
+    const [senha, setSenha] = useState<string>('');
+    const [bairro, setBairro] = useState<string>('');
+    const router = useRouter();
+    const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        if (nome && telefone && municipio && rua && senha && bairro && email) {
+            const dado = JSON.parse(sessionStorage.user);
             const data = {
                 nome: nome,
                 telefone: telefone,
@@ -24,15 +25,15 @@ const Modal = () => {
                 senha: senha,
                 bairro: bairro,
                 email: email
-            } 
-            update('usuario', dado[0].id, data)
-            sessionStorage.removeItem('user')
-            router.push('/login')
+            };
+            update('usuario', dado[0].id, data);
+            sessionStorage.removeItem('user');
+            router.push('/login');
+        } else {
+            alert('Preencha todos os campos!');
         }
-        else{
-            alert('Preencha todos os campos!')
-        }
-    }
+    };
+
     return (
         <>
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -43,41 +44,39 @@ const Modal = () => {
                                 <h5 className="modal-title" id="staticBackdropLabel">Alterar dados do Usuário</h5>
                                 <small className='text-danger'>* AS INFORMAÇÕES EM BRANCO NÃO SERÃO ALTERADAS *</small>
                             </div>
-
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <form>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="col-form-label">Nome:</label>
-                                    <input value={nome} onChange={(e)=>setNome(e.target.value)} type="text" className="form-control" id="name" />
+                                    <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" className="form-control" id="name" />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="email" className="col-form-label">Email:</label>
-                                    <input type="email" value={email} onChange={((e)=>setEmail(e.target.value))} className="form-control" id="email" />
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" className="form-control" id="email" />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="telefone" className="col-form-label">Telefone:</label>
-                                    <input type="text" value={telefone} onChange={(e)=>setTelefone(e.target.value)} className="form-control" id="telefone" />
+                                    <input value={telefone} onChange={(e) => setTelefone(e.target.value)} type="text" className="form-control" id="telefone" />
                                 </div>
                                 <div className="d-flex row">
                                     <div className="mb-3">
                                         <label htmlFor="password" className="col-form-label">Senha:</label>
-                                        <input type="password" value={senha} onChange={(e)=>setSenha(e.target.value)} className="form-control" id="password" />
+                                        <input value={senha} onChange={(e) => setSenha(e.target.value)} type="password" className="form-control" id="password" />
                                     </div>
                                 </div>
-                                
                                 <div className="mb-3">
                                     <label htmlFor="text" className="col-form-label">Município:</label>
-                                    <input type="text" value={municipio} onChange={(e)=>setMunicipio(e.target.value)} className="form-control" id="text" />
+                                    <input value={municipio} onChange={(e) => setMunicipio(e.target.value)} type="text" className="form-control" id="text" />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="bairro" className="col-form-label">Bairro:</label>
-                                    <input type="text" value={bairro} onChange={(e)=>setBairro(e.target.value)} className="form-control" id="bairro" />
+                                    <input value={bairro} onChange={(e) => setBairro(e.target.value)} type="text" className="form-control" id="bairro" />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="rua" className="col-form-label">Rua:</label>
-                                    <input type="text" value={rua} onChange={(e)=>setRua(e.target.value)} className="form-control" id="rua" />
+                                    <input value={rua} onChange={(e) => setRua(e.target.value)} type="text" className="form-control" id="rua" />
                                 </div>
                             </form>
                         </div>
@@ -89,7 +88,7 @@ const Modal = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Modal
+export default Modal;
