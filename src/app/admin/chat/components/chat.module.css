@@ -1,6 +1,6 @@
 .chat{
     width:  100%;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
 }
@@ -185,7 +185,7 @@
     line-height: 1.5;
     min-width: 80%;
     max-width: 80%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     padding: 10px;
     border-radius: 15px ;
@@ -257,7 +257,11 @@
 @media (max-width: 768px){
     .chat{
         margin-top: 70px;
-        height: calc(100vh - 70px);
+        height: calc(100dvh - 70px);
+    }
+
+    .inputGroup .formControl{
+        font-size: .8rem;
     }
 }
 

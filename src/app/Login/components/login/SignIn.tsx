@@ -41,11 +41,11 @@ const SignIn = () =>{
         <>
             <form className="form" action="#">
                         <h1 className="h1">Sign in</h1>
-                        <input value={email} onChange={(e)=>setEmail(e.target.value)} className="input" type="email" placeholder="Email" required/>
-                        <input value={senha} onChange={(e)=>setSenha(e.target.value)} className="input" type="password" placeholder="Password" required/>
-                        <button onClick={handleForm} className="button">Entrar</button> 
-            </form>
-               
+                        <input className="input" type="email" placeholder="Email" />
+                        <input className="input" type="password" placeholder="Password" />
+                        <a className="a" href="#">Esqueceu a senha?</a>
+                        <Link href="../pages/user/pages"><button className="button">Entrar</button></Link> 
+                    </form>
         </>
     )
 }
