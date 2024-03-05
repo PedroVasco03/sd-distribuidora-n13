@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from 'react'
 import Modal from '../modal/Modalu'
+import NomeUpdate from '../modalUpdate/ModalUpdate'
 import style from './profile.module.css'
+import { color } from 'chart.js/helpers'
 
 const Profileu = () => {
     const [session, setSession] = useState(!sessionStorage.user ? [] : JSON.parse(sessionStorage.user))
@@ -27,8 +29,8 @@ const Profileu = () => {
                                             style={{borderBottom:'1px solid #e0e0e0'}}>Dados do Usuário</h6>
                                             <div className="row">
                                                 <div className="col-sm-6">
-                                                    <p className="mb-1 fw-semibold">Nome</p>
-                                                    <h6 className={"text-muted fw-normal "+style.textmuted}>{!sessionStorage.user ? ''  : session[0].nome}</h6>
+                                                    <p className="mb-1 fw-semibold">Nome </p> 
+                                                    <h6 className={"text-muted fw-normal "+style.textmuted}>{!sessionStorage.user ? ''  : session[0].nome}  <i data-bs-toggle="modal" data-bs-target="#staticBackdrop2"style={{ color: '#000000'}} className="fa-solid fa-pencil"></i></h6>
                                                 </div>
                                                 <div className="col-sm-6">
                                                     <p className="mb-1 fw-semibold">Email</p>
@@ -92,7 +94,8 @@ const Profileu = () => {
                 </div>
                 
             </div>
-            <Modal />
+            <Modal/>
+            <NomeUpdate/>
         </>
     )
 }

@@ -50,7 +50,7 @@ const Modal: React.FC = () => {
                             <form>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="col-form-label">Nome:</label>
-                                    <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" className="form-control" id="name" />
+                                    <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" className="form-control" id="name"/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="email" className="col-form-label">Email:</label>
